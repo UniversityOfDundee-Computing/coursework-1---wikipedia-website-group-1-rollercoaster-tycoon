@@ -2,7 +2,6 @@
 You should use this repository for your first group coursework in AC11002 / AC51046
 
 ## Group Members
-Alter this subsection to add in all of your group members
 - Euan Johnston
 - Elia Cossais Benezech
 - Benjamin Pushkarev
