@@ -13,3 +13,6 @@ https://universityofdundee-computing.github.io/coursework-1---wikipedia-website-
 
 ### Link to relevant wikipedia
 https://en.wikipedia.org/wiki/RollerCoaster_Tycoon
+
+### Link to used bootstrap theme
+https://bootswatch.com/slate/
