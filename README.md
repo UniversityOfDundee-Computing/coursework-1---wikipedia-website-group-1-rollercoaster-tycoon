@@ -11,7 +11,7 @@ You should use this repository for your first group coursework in AC11002 / AC51
 ## Group Website
 https://universityofdundee-computing.github.io/coursework-1---wikipedia-website-group-1-rollercoaster-tycoon/
 
-### Link to relevant wikipedia
+### Link to relevant wikipedia page
 https://en.wikipedia.org/wiki/RollerCoaster_Tycoon
 
 ### Link to used bootstrap theme
