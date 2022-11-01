@@ -1,3 +1,4 @@
+
 body {
     background-image: url("https://www.pcgamesn.com/wp-content/uploads/2020/09/rollercoaster-tycoon-3-platinum-complete-edition-release-date.jpg");
    
@@ -6,10 +7,26 @@ body {
     
   }
   center {
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
+
  
   
+=======
+body {
+    background-image: url("https://www.pcgamesn.com/wp-content/uploads/2020/09/rollercoaster-tycoon-3-platinum-complete-edition-release-date.jpg");
+
+    background-attachment: fixed;
+    background-position: center;
+
+  }
+  center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
