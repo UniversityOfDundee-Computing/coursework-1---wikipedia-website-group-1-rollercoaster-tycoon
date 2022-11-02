@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <!-- Below title tag provides website title visible as text in the tab of the browser -->
-  <title>RollerCoaster Tycoon</title>
-
-  <!-- Below link tags provides references to style and basic css files in the same folder containing styling used by this page -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="basic.css">
-
-  <!-- Below script tags provides references to third party javascript animation of the rollercoaster tycoon logo as this page is reloaded -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="basic.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
   integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+
+<script>
+  var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 6000;	// Time Between Switch
+	 
+// Image List
+images[0] = "https://i.imgur.com/XGSe9aK.gif?noredirect";
+images[1] = "https://64.media.tumblr.com/aab76728bdc4ccc7bc9c979ef0e7f984/tumblr_pn4roxNP0p1v72ye8o2_540.gif";
+images[2] = "https://i.imgur.com/gcA4mDf.gif";
+images[3] = "https://64.media.tumblr.com/5a17465eaf46cd788a95ede55c451043/tumblr_pn4roxNP0p1v72ye8o3_540.gif";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+</script>
 <head>
   <title>Rolacoaster Tycoon</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4208/4208885.png">
 </head>
 
 <body>
   <nav class="navbar bg-transparent border-0 fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
@@ -153,23 +176,80 @@
           different
           customizable rides.
 
-        A port for the Xbox was released on 23 March 2003, handled by Frontier Developments and published by Infogrames
-        Interactive. This version featured both expansion packs as well.</p>
+          A port for the Xbox was released on 23 March 2003, handled by Frontier Developments and published by
+          Infogrames
+          Interactive. This version featured both expansion packs as well.</p>
+      </div>
+      <ul class="list-group list-group-flush bg-dark">
+        <li class="list-group-item">Developer-Chris Sawyer (1999–2002)</li>
+        <li class="list-group-item">Publisher-Atari Interactive (1999–present)[a]
+          RCTO Productions (2016-present)</li>
+        <li class="list-group-item">Platform(s)-Microsoft Windows, Xbox, macOS, iOS, Nintendo 3DS, Nintendo Switch,
+          Android</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
     </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Developer-Chris Sawyer (1999–2002)</li>
-      <li class="list-group-item">Publisher-Atari Interactive (1999–present)[a]
-        RCTO Productions (2016-present)</li>
-      <li class="list-group-item">Platform(s)-Microsoft Windows, Xbox, macOS, iOS, Nintendo 3DS, Nintendo Switch,
-        Android</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-  </div>
-  </div>
 
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-body ">
+        <h2 class="card-title">sequels</h2>
+        <p class="card-text">Due to the sucsess of the first game many sequals were created resulting in the creation of
+          the rollcoaster tycoon franchise : </p>
+      </div>
+
+      <div class="card-group">
+        <div class="card text-white bg-dark mb-3">
+          <img class="card-img-top"
+            src="https://upload.wikimedia.org/wikipedia/en/e/e4/RollerCoaster_Tycoon_2_%28boxart%29.jpg"
+            alt="Card image cap" height="370" width="436">
+          <div class="card-body">
+            <h5 class="card-title">RollerCoaster Tycoon 2</h5>
+            <p class="card-text">RollerCoaster Tycoon 2 was released on October 15th 2002. The game was developed by
+              Chris Sawyer and published by Infogrames Interactive.
+              <br>
+              RollerCoaster Tycoon 2 has two official expansion packs: Wacky Worlds and Time Twister, both released in
+              2003 and had no involvement from Chris Sawyer, instead being handled by Frontier Developments. The Combo
+              Park Pack edition contains the original game and the Wacky Worlds expansion. The Triple Thrill Pack
+              contains the original game and both expansions.<br>
+
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3">
+          <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/d/d8/RCT3-cover_art.jpg"
+            alt="Card image cap" height="370" width="436">
+          <div class="card-body">
+            <h5 class="card-title">RollerCoaster Tycoon 3</h5>
+            <p class="card-text">RollerCoaster Tycoon 3 was released on November 2nd 2004 in North America. Although the
+              core features of RollerCoaster Tycoon 3 are based on the previous games, Chris Sawyer, the developer of
+              the first two games, acted only as a consultant. The game was developed by Frontier Developments instead,
+              and published and advertised by Atari Interactive featuring a completely different structure.<br>
+
+              .</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3">
+          <img class="card-img-top"
+            src="https://upload.wikimedia.org/wikipedia/en/1/12/RollerCoaster_Tycoon_World_cover_art.jpg"
+            alt="Card image cap" height="370" width="436">
+          <div class="card-body">
+            <h5 class="card-title">RollerCoaster Tycoon World</h5>
+            <p class="card-text">RollerCoaster Tycoon World was developed by Nvizzio Creations for Atari Interactive and
+              RCTO Productions and released on 16 November 2016. The installment is different from previous games in
+              that players build coasters with a spline-based system. It also introduced a new "Architect mode" and
+              "safety-rating" options when building coasters. The game is also the first to incorporate the Steam
+              Workshop.<br>
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
