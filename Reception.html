@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="basic.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+  integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+<script>
+  var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 6000;	// Time Between Switch
+
+// Image List
+images[0] = "https://i.imgur.com/XGSe9aK.gif?noredirect";
+images[1] = "https://64.media.tumblr.com/aab76728bdc4ccc7bc9c979ef0e7f984/tumblr_pn4roxNP0p1v72ye8o2_540.gif";
+images[2] = "https://i.imgur.com/gcA4mDf.gif";
+images[3] = "https://64.media.tumblr.com/5a17465eaf46cd788a95ede55c451043/tumblr_pn4roxNP0p1v72ye8o3_540.gif";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++;
+	} else {
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+</script>
+<head>
+  <title>Rolacoaster Tycoon</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4208/4208885.png">
+</head>
+
+<body>
+
+  <div class="container text-center animate__animated ">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+              <img src="https://th.bing.com/th/id/R.7be1662b4c9790b773eec573734d86db?rik=2IjxjxUgj0q23A&pid=ImgRaw&r=0"
+                alt="Bootstrap" width="120" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link text-white" href="index.html">Home</a>
+                <a class="nav-link text-white" href="Gameplay.html">Gameplay</a>
+                <a class="nav-link text-white active" aria-current="page" href="#">Reception</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="card text-white bg-dark mb-3 mx-auto animate__animated animate__zoomIn">
+      <img  name = "slide"  class="card-img-top" alt="..." width="800" height="500">
+
+
+      <div class="card-body">
+        <p class="card-text">
+        <h1>Opening the game</h1><br>As you open up the game you are greeted by an animated background along with sound cues of screams and cheers of the crowd enjoying themselfs on the rides. There is a big image in the top right of the screen displaying the games logo.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mx-auto animate__animated animate__zoomIn ">
+    <div class="card text-white bg-dark mb-3">
+
+
+      <div class="card-body">
+        <h5 class="card-title">Where To Go From Here</h5>
+        <p class="card-text">There are four buttons to click all in a line at the bottom of the screen.</p>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Start Game.
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">This first button allows the user to enter their theme park that they have been playing a continue progressing in their theme park.</div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Save Game.
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The user must save their game manually to make sure progress is not lost so that the user can continue from where they left off.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Tutorial.
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The tutorial is for new players who have not played the game before so that they can learn how to game works and not make any mistakes at the begining that they will nt be ablke to change. this also mean that the user will have the most fun when they know what they are doing.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Exit.
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">When the user has saved their game and has finished playing the game they are able to leave the game and quite to the desktop.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <ul class="list-group list-group-flush bg-dark">
+        <li class="list-group-item">Developer-Chris Sawyer (1999–2002)</li>
+        <li class="list-group-item">Publisher-Atari Interactive (1999–present)[a]
+          RCTO Productions (2016-present)</li>
+        <li class="list-group-item">Platform(s)-Microsoft Windows, Xbox, macOS, iOS, Nintendo 3DS, Nintendo Switch,
+          Android</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-body ">
+        <h2 class="card-title">sequels</h2>
+        <p class="card-text">Due to the sucsess of the first game many sequals were created resulting in the creation of
+          the rollcoaster tycoon franchise : </p>
+      </div>
+
+      <div class="card-group">
+        <div class="card text-white bg-dark mb-3">
+          <img class="card-img-top"
+            src="https://upload.wikimedia.org/wikipedia/en/e/e4/RollerCoaster_Tycoon_2_%28boxart%29.jpg"
+            alt="Card image cap" height="370" width="436">
+          <div class="card-body">
+            <h5 class="card-title">RollerCoaster Tycoon 2</h5>
+            <p class="card-text">RollerCoaster Tycoon 2 was released on October 15th 2002. The game was developed by
+              Chris Sawyer and published by Infogrames Interactive.
+              <br>
+              RollerCoaster Tycoon 2 has two official expansion packs: Wacky Worlds and Time Twister, both released in
+              2003 and had no involvement from Chris Sawyer, instead being handled by Frontier Developments. The Combo
+              Park Pack edition contains the original game and the Wacky Worlds expansion. The Triple Thrill Pack
+              contains the original game and both expansions.<br>
+
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3">
+          <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/d/d8/RCT3-cover_art.jpg"
+            alt="Card image cap" height="370" width="436">
+          <div class="card-body">
+            <h5 class="card-title">RollerCoaster Tycoon 3</h5>
+            <p class="card-text">RollerCoaster Tycoon 3 was released on November 2nd 2004 in North America. Although the
+              core features of RollerCoaster Tycoon 3 are based on the previous games, Chris Sawyer, the developer of
+              the first two games, acted only as a consultant. The game was developed by Frontier Developments instead,
+              and published and advertised by Atari Interactive featuring a completely different structure.<br>
+
+              .</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3">
+          <img class="card-img-top"
+            src="https://upload.wikimedia.org/wikipedia/en/1/12/RollerCoaster_Tycoon_World_cover_art.jpg"
+            alt="Card image cap" height="370" width="436">
+          <div class="card-body">
+            <h5 class="card-title">RollerCoaster Tycoon World</h5>
+            <p class="card-text">RollerCoaster Tycoon World was developed by Nvizzio Creations for Atari Interactive and
+              RCTO Productions and released on 16 November 2016. The installment is different from previous games in
+              that players build coasters with a spline-based system. It also introduced a new "Architect mode" and
+              "safety-rating" options when building coasters. The game is also the first to incorporate the Steam
+              Workshop.<br>
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
