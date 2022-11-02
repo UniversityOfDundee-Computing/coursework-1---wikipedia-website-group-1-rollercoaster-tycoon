@@ -13,7 +13,7 @@
   var i = 0; 			// Start Point
 var images = [];	// Images Array
 var time = 6000;	// Time Between Switch
-	 
+
 // Image List
 images[0] = "https://i.imgur.com/XGSe9aK.gif?noredirect";
 images[1] = "https://64.media.tumblr.com/aab76728bdc4ccc7bc9c979ef0e7f984/tumblr_pn4roxNP0p1v72ye8o2_540.gif";
@@ -27,8 +27,8 @@ function changeImg(){
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
 	  // Add 1 to Index
-	  i++; 
-	} else { 
+	  i++;
+	} else {
 		// Reset Back To O
 		i = 0;
 	}
@@ -47,50 +47,6 @@ window.onload=changeImg;
 </head>
 
 <body>
-  <nav class="navbar bg-transparent border-0 fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </nav>
 
   <div class="container text-center animate__animated ">
     <div class="row">
@@ -108,9 +64,8 @@ window.onload=changeImg;
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                <a class="nav-link text-white" href="#">Development</a>
-                <a class="nav-link text-white" href="#">Pricing</a>
-                <a class="nav-link disabled text-white">Disabled</a>
+                <a class="nav-link text-white" href="Gameplay.html">Gameplay</a>
+                <a class="nav-link text-white" href="Reception.html">Reception</a>
               </div>
             </div>
           </div>
@@ -120,7 +75,7 @@ window.onload=changeImg;
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          
+
         </div>
       </div>
     </div>
@@ -131,7 +86,7 @@ window.onload=changeImg;
 
     <div class="card text-white bg-dark mb-3 mx-auto animate__animated animate__zoomIn">
       <img  name = "slide"  class="card-img-top" alt="..." width="800" height="500">
-      
+
 
       <div class="card-body">
         <p class="card-text">
@@ -157,7 +112,7 @@ window.onload=changeImg;
     </div>
   </div>
 
-  
+
   <div class="container mx-auto animate__animated animate__zoomIn ">
     <div class="card text-white bg-dark mb-3">
 
