@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="basic.css">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+
+<head>
+  <!-- Below title tag provides website title visible as text in the tab of the browser -->
+  <title>RollerCoaster Tycoon</title>
+
+  <!-- Below link tags provides references to style and basic css files in the same folder containing styling used by this page -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="basic.css">
+
+  <!-- Below script tags provides references to third party javascript animation of the rollercoaster tycoon logo as this page is reloaded -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
   integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+  <!-- Below link tag provides reference to a third party stylesheet -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-<head>
-  <title>Rolacoaster Tycoon</title>
+  >
 </head>
 
 <body>
+
+  <!-- Below nav tag provides for bootstrap themed navbar -->
   <nav class="navbar navbar-expand-lg bg-light">
+
+    <!-- Below div tag provides for the navbar text & buttons to be contained within it and the padding of the above nav tag -->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+
+      <!-- Below anchor tag provides the text and a relative path hyperlink to the same page, scrolled to the top
+      source: https://stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used -->
+      <a class="navbar-brand" href="#">RollerCoaster Tycoon</a>
+
+      <!-- Below button tag is part of bootstrap source code from bootswatch -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Below div tag provides for the rest of the navbar text & buttons after the anchor tag -->
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <!-- Below ul tag provides for an unordered list with items inside enclosed li tags with links inside enclosed anchor tags -->
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -34,6 +54,11 @@
           <li class="nav-item">
             <a class="nav-link" href="Reception.html">Reception</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Development.html">Development</a>
+          </li>
+
+          <!-- Below li tag provides for a list item with a class specified providing for a dropdown link, enabled by bootstrap source code - specifically by the class of the li tag being "nav-item dropdown" instead of "nav-item" and the extra syntax of another unordered list enclosed in it -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown link
@@ -49,65 +74,77 @@
     </div>
   </nav>
 
-
-
-
-
+  <!-- Below div tag provides for a container that uses a zoom in animation -->
   <div class = "container mx-auto animate__animated animate__zoomIn ">
-    <img src="https://th.bing.com/th/id/R.7be1662b4c9790b773eec573734d86db?rik=2IjxjxUgj0q23A&pid=ImgRaw&r=0" class="mx-auto" >
-  <div class="card" >
 
-    <div class="card-body">
-      <p class="card-text"><h1>About</h1><br>RollerCoaster Tycoon is a series of simulation video games about building and managing
-        an amusement park. Each game in the series challenges players with open-ended amusement park management and
-        development, and allowing players to construct and customize their own unique roller coasters and other thrill
-        rides.
+    <!-- Below img tag provides for the background-free rollercoaster tycoon logo to show up at the top of the div its enclosed in -->
+    <img src="https://th.bing.com/th/id/R.7be1662b4c9790b773eec573734d86db?rik=2IjxjxUgj0q23A&pid=ImgRaw&r=0" class="mx-auto"/>
 
-        The first game was created by Scottish programmer Chris Sawyer, with assistance from various leading figures from
-        the real-world roller coaster and theme park industry.[1] The rest of the series contains three other main games,
-        expansion packs, a number of ports, and a mobile installment. A refresh of the series, RollerCoaster Tycoon World,
-        was released in November 2016, and followed up by RollerCoaster Tycoon Adventures for Switch in 2018 and PC in
-        2019.
+    <!-- Below div tag provides for a container of a class that utilises the bootstrap theme, even with a semantic class name that describes well the visual element rendered by the browser -->
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">
+          <h1>About</h1>
+          <br>RollerCoaster Tycoon is a series of simulation video games about building and managing
+          an amusement park. Each game in the series challenges players with open-ended amusement park management and
+          development, and allowing players to construct and customize their own unique roller coasters and other thrill
+          rides.
 
-        Licensing for the series is currently held by Atari SA, who renewed their deal with Chris Sawyer on October 11,
-        2022
-        for ten more years.</p>
+          The first game was created by Scottish programmer Chris Sawyer, with assistance from various leading figures from
+          the real-world roller coaster and theme park industry.[1] The rest of the series contains three other main games,
+          expansion packs, a number of ports, and a mobile installment. A refresh of the series, RollerCoaster Tycoon World,
+          was released in November 2016, and followed up by RollerCoaster Tycoon Adventures for Switch in 2018 and PC in
+          2019.
+
+          Licensing for the series is currently held by Atari SA, who renewed their deal with Chris Sawyer on October 11,
+          2022
+          for ten more years.</p>
+      </div>
     </div>
   </div>
-</div>
+
+  <!-- Below div tag provides for a container that uses a zoom in animation -->
   <div class = "container mx-auto animate__animated animate__zoomIn ">
-  <div class="card">
-    <img src="https://miro.medium.com/max/1400/1*UVVcdBK8dNitgxOubXX-dA.jpeg" class="card-img-top">
 
-    <div class="card-body">
-      <h5 class="card-title">Rolacoaster tycoon</h5>
-      <p class="card-text">RollerCoaster Tycoon was released for Microsoft Windows on 22 March 1999. RollerCoaster
-        Tycoon was later ported to the Xbox game console in 2003. The game was developed by Chris Sawyer and published
-        by Hasbro Interactive under the MicroProse brand.
+    <!-- Below div tag provides for a container with a semantic class name using bootstrap -->
+    <div class="card">
 
-        RollerCoaster Tycoon received two expansion packs: Added Attractions (released in North America as Corkscrew
-        Follies) in 1999, and Loopy Landscapes in 2000. Two special editions were released: RollerCoaster Tycoon
-        Gold/Totally RollerCoaster in 2002, which contained the original game, Corkscrew Follies, and Loopy Landscapes;
-        and RollerCoaster Tycoon Deluxe in 2003, which contained the content in Gold plus more designs for the different
-        customizable rides.
+      <!-- Below img tag provides for the old rollercoaster tycoon screenshot at the beginning of the card div container it's enclosed in -->
+      <img src="https://miro.medium.com/max/1400/1*UVVcdBK8dNitgxOubXX-dA.jpeg" class="card-img-top">
+      
+      <!-- Below div tag provides for a container enclosing the body of the card after the old rollercoaster tycoon screenshot above -->
+      <div class="card-body">
+        <h5 class="card-title">RollerCoaster Tycoon</h5>
+        <p class="card-text">RollerCoaster Tycoon was released for Microsoft Windows on 22 March 1999. RollerCoaster
+          Tycoon was later ported to the Xbox game console in 2003. The game was developed by Chris Sawyer and published
+          by Hasbro Interactive under the MicroProse brand.
 
-        A port for the Xbox was released on 23 March 2003, handled by Frontier Developments and published by Infogrames
-        Interactive. This version featured both expansion packs as well.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Developer-Chris Sawyer (1999–2002)</li>
-      <li class="list-group-item">Publisher-Atari Interactive (1999–present)[a]
-        RCTO Productions (2016-present)</li>
-      <li class="list-group-item">Platform(s)-Microsoft Windows, Xbox, macOS, iOS, Nintendo 3DS, Nintendo Switch,
-        Android</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+          RollerCoaster Tycoon received two expansion packs: Added Attractions (released in North America as Corkscrew
+          Follies) in 1999, and Loopy Landscapes in 2000. Two special editions were released: RollerCoaster Tycoon
+          Gold/Totally RollerCoaster in 2002, which contained the original game, Corkscrew Follies, and Loopy Landscapes;
+          and RollerCoaster Tycoon Deluxe in 2003, which contained the content in Gold plus more designs for the different
+          customizable rides.
+
+          A port for the Xbox was released on 23 March 2003, handled by Frontier Developments and published by Infogrames
+          Interactive. This version featured both expansion packs as well.</p>
+      </div>
+
+      <!-- After the body of the card is an unordered list tag with list items that are used for the bordered lines of text above the bottom of the card -->
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Developer:</strong> Chris Sawyer (1999–2002)</li>
+        <li class="list-group-item"><strong>Publisher:</strong> Atari Interactive (1999–present)[a]
+          RCTO Productions (2016-present)</li>
+        <li class="list-group-item"><strong>Platform(s):</strong> Microsoft Windows, Xbox, macOS, iOS, Nintendo 3DS, Nintendo Switch,
+          Android</li>
+      </ul>
+
+      <!-- At the bottom of this card is a div tag to contain next to each other 2 anchor tags providing hyperlinks -->
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
     </div>
   </div>
-  </div>
-
 </body>
 
 </html>
