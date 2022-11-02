@@ -14,137 +14,162 @@
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
   integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-
-  <!-- Below link tag provides reference to a third party stylesheet -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  >
+  />
+
+<head>
+  <title>Rolacoaster Tycoon</title>
 </head>
 
 <body>
-
-  <!-- Below nav tag provides for bootstrap themed navbar -->
-  <nav class="navbar navbar-expand-lg bg-light">
-
-    <!-- Below div tag provides for the navbar text & buttons to be contained within it and the padding of the above nav tag -->
+  <nav class="navbar bg-transparent border-0 fixed-top">
     <div class="container-fluid">
-
-      <!-- Below anchor tag provides the text and a relative path hyperlink to the same page, scrolled to the top
-      source: https://stackoverflow.com/questions/4855168/what-is-href-and-why-is-it-used -->
-      <a class="navbar-brand" href="#">RollerCoaster Tycoon</a>
-
-      <!-- Below button tag is part of bootstrap source code from bootswatch -->
+      <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Below div tag provides for the rest of the navbar text & buttons after the anchor tag -->
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-
-        <!-- Below ul tag provides for an unordered list with items inside enclosed li tags with links inside enclosed anchor tags -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Gameplay.html">Gameplay</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Reception.html">Reception</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Development.html">Development</a>
-          </li>
-
-          <!-- Below li tag provides for a list item with a class specified providing for a dropdown link, enabled by bootstrap source code - specifically by the class of the li tag being "nav-item dropdown" instead of "nav-item" and the extra syntax of another unordered list enclosed in it -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </div>
   </nav>
 
-  <!-- Below div tag provides for a container that uses a zoom in animation -->
-  <div class = "container mx-auto animate__animated animate__zoomIn ">
+  <div class="container text-center animate__animated ">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+              <img src="https://th.bing.com/th/id/R.7be1662b4c9790b773eec573734d86db?rik=2IjxjxUgj0q23A&pid=ImgRaw&r=0"
+                alt="Bootstrap" width="120" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-white" href="#">Development</a>
+                <a class="nav-link text-white" href="#">Pricing</a>
+                <a class="nav-link disabled text-white">Disabled</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          
+        </div>
+      </div>
+    </div>
 
-    <!-- Below img tag provides for the background-free rollercoaster tycoon logo to show up at the top of the div its enclosed in -->
-    <img src="https://th.bing.com/th/id/R.7be1662b4c9790b773eec573734d86db?rik=2IjxjxUgj0q23A&pid=ImgRaw&r=0" class="mx-auto"/>
 
-    <!-- Below div tag provides for a container of a class that utilises the bootstrap theme, even with a semantic class name that describes well the visual element rendered by the browser -->
-    <div class="card">
+
+
+
+    <div class="card text-white bg-dark mb-3 mx-auto animate__animated animate__zoomIn">
+      <img  name = "slide"  class="card-img-top" alt="..." width="800" height="500">
+      
+
       <div class="card-body">
         <p class="card-text">
-          <h1>About</h1>
-          <br>RollerCoaster Tycoon is a series of simulation video games about building and managing
-          an amusement park. Each game in the series challenges players with open-ended amusement park management and
-          development, and allowing players to construct and customize their own unique roller coasters and other thrill
-          rides.
+        <h1>Introduction</h1><br>RollerCoaster Tycoon is a series of simulation video games about building and managing
+        an amusement park. Each game in the series challenges players with open-ended amusement park management and
+        development, and allowing players to construct and customize their own unique roller coasters and other thrill
+        rides.
 
-          The first game was created by Scottish programmer Chris Sawyer, with assistance from various leading figures from
-          the real-world roller coaster and theme park industry.[1] The rest of the series contains three other main games,
-          expansion packs, a number of ports, and a mobile installment. A refresh of the series, RollerCoaster Tycoon World,
-          was released in November 2016, and followed up by RollerCoaster Tycoon Adventures for Switch in 2018 and PC in
-          2019.
+        The first game was created by Scottish programmer Chris Sawyer, with assistance from various leading figures
+        from
+        the real-world roller coaster and theme park industry.[1] The rest of the series contains three other main
+        games,
+        expansion packs, a number of ports, and a mobile installment. A refresh of the series, RollerCoaster Tycoon
+        World,
+        was released in November 2016, and followed up by RollerCoaster Tycoon Adventures for Switch in 2018 and PC in
+        2019.
 
-          Licensing for the series is currently held by Atari SA, who renewed their deal with Chris Sawyer on October 11,
-          2022
-          for ten more years.</p>
+        Licensing for the series is currently held by Atari SA, who renewed their deal with Chris Sawyer on October 11,
+        2022
+        for ten more years.</p>
+
       </div>
     </div>
   </div>
 
-  <!-- Below div tag provides for a container that uses a zoom in animation -->
-  <div class = "container mx-auto animate__animated animate__zoomIn ">
+  
+  <div class="container mx-auto animate__animated animate__zoomIn ">
+    <div class="card text-white bg-dark mb-3">
 
-    <!-- Below div tag provides for a container with a semantic class name using bootstrap -->
-    <div class="card">
 
-      <!-- Below img tag provides for the old rollercoaster tycoon screenshot at the beginning of the card div container it's enclosed in -->
-      <img src="https://miro.medium.com/max/1400/1*UVVcdBK8dNitgxOubXX-dA.jpeg" class="card-img-top">
-      
-      <!-- Below div tag provides for a container enclosing the body of the card after the old rollercoaster tycoon screenshot above -->
       <div class="card-body">
-        <h5 class="card-title">RollerCoaster Tycoon</h5>
+        <h5 class="card-title">Rolacoaster tycoon</h5>
         <p class="card-text">RollerCoaster Tycoon was released for Microsoft Windows on 22 March 1999. RollerCoaster
           Tycoon was later ported to the Xbox game console in 2003. The game was developed by Chris Sawyer and published
           by Hasbro Interactive under the MicroProse brand.
 
           RollerCoaster Tycoon received two expansion packs: Added Attractions (released in North America as Corkscrew
           Follies) in 1999, and Loopy Landscapes in 2000. Two special editions were released: RollerCoaster Tycoon
-          Gold/Totally RollerCoaster in 2002, which contained the original game, Corkscrew Follies, and Loopy Landscapes;
-          and RollerCoaster Tycoon Deluxe in 2003, which contained the content in Gold plus more designs for the different
+          Gold/Totally RollerCoaster in 2002, which contained the original game, Corkscrew Follies, and Loopy
+          Landscapes;
+          and RollerCoaster Tycoon Deluxe in 2003, which contained the content in Gold plus more designs for the
+          different
           customizable rides.
 
-          A port for the Xbox was released on 23 March 2003, handled by Frontier Developments and published by Infogrames
-          Interactive. This version featured both expansion packs as well.</p>
-      </div>
-
-      <!-- After the body of the card is an unordered list tag with list items that are used for the bordered lines of text above the bottom of the card -->
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><strong>Developer:</strong> Chris Sawyer (1999–2002)</li>
-        <li class="list-group-item"><strong>Publisher:</strong> Atari Interactive (1999–present)[a]
-          RCTO Productions (2016-present)</li>
-        <li class="list-group-item"><strong>Platform(s):</strong> Microsoft Windows, Xbox, macOS, iOS, Nintendo 3DS, Nintendo Switch,
-          Android</li>
-      </ul>
-
-      <!-- At the bottom of this card is a div tag to contain next to each other 2 anchor tags providing hyperlinks -->
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
+        A port for the Xbox was released on 23 March 2003, handled by Frontier Developments and published by Infogrames
+        Interactive. This version featured both expansion packs as well.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Developer-Chris Sawyer (1999–2002)</li>
+      <li class="list-group-item">Publisher-Atari Interactive (1999–present)[a]
+        RCTO Productions (2016-present)</li>
+      <li class="list-group-item">Platform(s)-Microsoft Windows, Xbox, macOS, iOS, Nintendo 3DS, Nintendo Switch,
+        Android</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
     </div>
   </div>
+  </div>
+
 </body>
 
 </html>
