@@ -9,39 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
-<script>
-  var i = 0; 			// Start Point
-  var images = [];	    // Images Array
-  var time = 6000;	    // Time Between Switch
-
-// Image List
-images[0] = "https://i.imgur.com/XGSe9aK.gif?noredirect";
-images[1] = "https://64.media.tumblr.com/aab76728bdc4ccc7bc9c979ef0e7f984/tumblr_pn4roxNP0p1v72ye8o2_540.gif";
-images[2] = "https://i.imgur.com/gcA4mDf.gif";
-images[3] = "https://64.media.tumblr.com/5a17465eaf46cd788a95ede55c451043/tumblr_pn4roxNP0p1v72ye8o3_540.gif";
-
-// Change Image
-function changeImg(){
-	document.slide.src = images[i];
-
-	// Check If Index Is Under Max
-	if(i < images.length - 1){
-	  // Add 1 to Index
-	  i++;
-	} else {
-		// Reset Back To O
-		i = 0;
-	}
-
-	// Run function every x seconds
-	setTimeout("changeImg()", time);
-}
-
-// Run function when page loads
-window.onload=changeImg;
-
-</script>
-
 <head>
     <title>Rolacoaster Tycoon</title>
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4208/4208885.png">
@@ -79,9 +46,9 @@ window.onload=changeImg;
 
         <div class="card text-white bg-dark mb-3">
             <div class="card-body ">
-                <h2 class="card-title">sequels</h2>
-                <p class="card-text">Due to the sucsess of the first game many sequals were created resulting in the creation of
-                the rollcoaster tycoon franchise : </p>
+                <h2 class="card-title">Sequels</h2>
+                <p class="card-text">Due to the success of the first game many sequels were created resulting in the creation of
+                the rollercoaster tycoon franchise : </p>
             </div>
 
             <div class="card-group">
