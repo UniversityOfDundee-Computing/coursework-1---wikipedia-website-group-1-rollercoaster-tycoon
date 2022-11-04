@@ -42,37 +42,68 @@
         window.onload=changeImg;
       </script>
 
-      <title>Rolecoaster Tycoon</title>
+      <title>Rolacoaster Tycoon</title>
       <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/4208/4208885.png">
   </head>
 
   <!-- Below body tag contains the documents body to be rendered as elements by the browser -->
   <body>
-    
-    <div class="row">
-      <div class="col">
-        <nav class="navbar navbar-expand-lg bg-dark text-white">
-          <div class="container-fluid ">
-            <a class="navbar-brand" href="#">
-              <img src="https://th.bing.com/th/id/R.7be1662b4c9790b773eec573734d86db?rik=2IjxjxUgj0q23A&pid=ImgRaw&r=0"
-                alt="Bootstrap" width="120" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                <a class="nav-link text-white" href="Gameplay.html">Gameplay</a>
-                <a class="nav-link text-white" href="Reception.html">Reception</a>
-                <a class="nav-link text-white" href="Legacy.html">Legacy</a>
-                <a class="nav-link text-white" href="Development.html">Development</a>
+
+    <!-- Below div contains elements to be animated as one group utilising the 3rd linked stylesheet hosted on cdnjs.cloudflare.com via mentioning the "animate__animated" atribute in the class -->
+    <div class="container animate__animated">
+
+      <!-- Below div.row & div.col tags reference style.css to ensure gutters, element display behaviour, text wrapping and margins are consistent with the content on the rest of the page -->
+      <div class="row">
+        <div class="col">
+
+          <!-- Below nav.navbar tag introduces the navbar element from bootstrap -->
+          <nav class="navbar navbar-expand-lg bg-dark text-white">
+            <div class="container-fluid ">
+
+              <!-- Provided the below anchor.navbar-brand tag hyperlinks to #, aka the current page, the rollercoaster tycoon logo is displayed first along the navbar utilising the navbar-brand element from bootstrap -->
+              <a class="navbar-brand" href="#">
+                <img src="https://th.bing.com/th/id/R.7be1662b4c9790b773eec573734d86db?rik=2IjxjxUgj0q23A&pid=ImgRaw&r=0"
+                  alt="Bootstrap" width="120" height="60">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                <!-- Below div.navbar-nav tag introduces and contains the navbar-nav element from bootstrap containing anchor links for the links in the navbar -->
+                <div class="navbar-nav">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+                  <a class="nav-link text-white" href="Gameplay.html">Gameplay</a>
+                  <a class="nav-link text-white" href="Reception.html">Reception</a>
+                  <a class="nav-link text-white" href="Legacy.html"> Legacy</a>
+                  <a class="nav-link text-white active" aria-current="page" href="#">Development</a>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
+
+      <!-- Below div.card tag introduces and contains the card element from bootstrap -->
+      <div class="card text-white bg-dark mb-3 mx-auto animate__animated animate__zoomIn">
+        <div class="card-body">
+          <h2 class="card-title">Development</h2>
+          <p class="card-text">With the Rollercoaster Tycoon game series launching with the first edition in 1999, the game has saw much development through to the latest release in 2020. This is explored below:</p>
+        </div>
+        
+        <div class="card-body">
+          <p class="card-text">
+          <h1>Opening the game</h1><br>As you open up the game you are greeted by an animated background along with sound cues of screams and cheers of the crowd enjoying themselfs on the rides. There is a big image in the top right of the screen displaying the games logo.</p>
+  
+        </div>
+      </div>
+
+      <!-- Below ordered list tag introduces the breadcrumb element from bootstrap -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Development</li>
+      </ol>
     </div>
   </body>
 </html>
